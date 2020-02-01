@@ -1,0 +1,171 @@
+$blue: rgb(0, 195, 247);
+$dark-blue: rgb(1, 27, 51);
+$green: rgb(59, 183, 94);
+$grey: rgb(157, 159, 162);
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+
+body {
+    background: lighten($color: $dark-blue, $amount: 1);
+    font-family: 'Open Sans', sans-serif, 'Roboto', 'Martel Sans';
+    font-size: 16px;
+}
+
+.signup {
+    display: grid;
+    justify-items: center;
+    margin: 40px auto 15px auto;
+    width: 60%;
+}
+
+.signup__logo {
+    margin-bottom: 45px;
+}
+
+.signup__container {
+    background: $white;
+    border: 1px solid $white;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25px;
+    padding: 50px 30px;
+}
+
+.signup__writeup {
+
+    &--title {
+        color: rgb(54, 118, 200);
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    &--desc {
+        color: darken($color: $grey, $amount: 20);
+        line-height: 1.5;
+    }
+}
+
+.ceo--logo {
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.signup__writeup--ceo {
+    color: darken($color: $grey, $amount: 20);
+}
+
+.signup__form {
+    padding-left: 10px;
+    //border: 1px solid red;
+
+    &__input-group {
+        //border: 1px solid yellow;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    &--label {
+        color: lighten($color: rgb(51, 51, 51), $amount: 30);
+        display: block;
+        font-weight: 550;
+        margin-bottom: 7px;
+    }
+
+    &--input {
+        border: 1px solid lighten($color: $grey, $amount: 20);
+        border-radius: 2px;
+        color: lighten($color: $grey, $amount: 30);
+        display: block;
+        font-size: 1rem;
+        outline: none;
+        padding: 10px 10px;
+        width: 90%;
+    }
+
+    &--select {
+        background: $white;
+        border: 1px solid lighten($color: $grey, $amount: 20);
+        border-radius: 2px;
+        color: $grey;
+        display: block;
+        font-size: 1rem;
+        outline: none;
+        padding: 10px;
+        width: 95%;
+    }
+
+    &__select--desc {
+        color: grey;
+        font-size: 0.9rem;
+        line-height: 1.3;
+        margin-top: 7px;
+
+        & a {
+            color: rgb(54, 118, 200);
+            text-decoration: none;
+        }
+    }
+
+    &--btn {
+        background: lighten($color: rgb(59, 183, 94), $amount: 8);
+        border: none;
+        border-radius: 4px;
+        color: $white;
+        cursor: pointer;
+        font-size: 1.3rem;
+        outline: none;
+        padding: 12px 20px;
+        width: 100%;
+    }
+
+    &--terms {
+        color: $grey;
+        font-size: 0.9rem;
+        line-height: 1.3;
+
+        & a {
+            color: rgb(54, 118, 200);
+            text-decoration: none;
+        }
+    }
+}
+
+.signup--login-link {
+    color: rgb(219, 219, 219);
+    font-size: 0.9rem;
+
+    & a {
+        color: rgb(219, 219, 219);
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+
+.signup__form__password {
+    list-style: none;
+}
+
+.signup__password--auth {
+    align-content: center;
+    color: $grey;
+    font-size: 0.8rem;
+    margin: 0 0 12px 0;
+    padding: 0;
+    position: relative;
+
+}
+ 
+.signup__password--auth::before {
+    color: lightgreen;
+    content: "\2022";
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 10px;
+    left: -1.3rem;
+    position: absolute;
+    top: -0.49rem;
+}

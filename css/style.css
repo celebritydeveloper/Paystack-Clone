@@ -1,0 +1,162 @@
+body {
+  background: #011e38;
+  font-family: 'Open Sans', sans-serif, 'Roboto', 'Martel Sans';
+  font-size: 16px;
+}
+
+.signup {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin: 40px auto 15px auto;
+  width: 60%;
+}
+
+.signup__logo {
+  margin-bottom: 45px;
+}
+
+.signup__container {
+  background: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 25px;
+  padding: 50px 30px;
+}
+
+.signup__writeup--title {
+  color: #3676c8;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.signup__writeup--desc {
+  color: #6a6c6f;
+  line-height: 1.5;
+}
+
+.ceo--logo {
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.signup__writeup--ceo {
+  color: #6a6c6f;
+}
+
+.signup__form {
+  padding-left: 10px;
+}
+
+.signup__form__input-group {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.signup__form--label {
+  color: gray;
+  display: block;
+  font-weight: 550;
+  margin-bottom: 7px;
+}
+
+.signup__form--input {
+  border: 1px solid #d1d2d4;
+  border-radius: 2px;
+  color: #ececec;
+  display: block;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px 10px;
+  width: 90%;
+}
+
+.signup__form--select {
+  background: white;
+  border: 1px solid #d1d2d4;
+  border-radius: 2px;
+  color: #9d9fa2;
+  display: block;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px;
+  width: 95%;
+}
+
+.signup__form__select--desc {
+  color: grey;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin-top: 7px;
+}
+
+.signup__form__select--desc a {
+  color: #3676c8;
+  text-decoration: none;
+}
+
+.signup__form--btn {
+  background: #53c874;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+  outline: none;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.signup__form--terms {
+  color: #9d9fa2;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.signup__form--terms a {
+  color: #3676c8;
+  text-decoration: none;
+}
+
+.signup--login-link {
+  color: #dbdbdb;
+  font-size: 0.9rem;
+}
+
+.signup--login-link a {
+  color: #dbdbdb;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup__form__password {
+  list-style: none;
+}
+
+.signup__password--auth {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #9d9fa2;
+  font-size: 0.8rem;
+  margin: 0 0 12px 0;
+  padding: 0;
+  position: relative;
+}
+
+.signup__password--auth::before {
+  color: lightgreen;
+  content: "\2022";
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 10px;
+  left: -1.3rem;
+  position: absolute;
+  top: -0.49rem;
+}
+/*# sourceMappingURL=style.css.map */
