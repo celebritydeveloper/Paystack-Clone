@@ -144,6 +144,17 @@ body {
     }
 }
 
+.signup__password--success {
+    background: lighten($color: rgb(59, 183, 94), $amount: 40);
+    border: 1px solid lighten($color: rgb(59, 183, 94), $amount: 40);
+    border-radius: 4px;
+    color: rgb(59, 183, 94);
+    margin-top: 10px;
+    padding: 12px;
+    width: 90%;
+
+}
+
 .signup__form__password {
     list-style: none;
 }

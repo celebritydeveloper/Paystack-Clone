@@ -134,6 +134,16 @@ body {
   text-decoration: none;
 }
 
+.signup__password--success {
+  background: #cfefd8;
+  border: 1px solid #cfefd8;
+  border-radius: 4px;
+  color: #3bb75e;
+  margin-top: 10px;
+  padding: 12px;
+  width: 90%;
+}
+
 .signup__form__password {
   list-style: none;
 }
