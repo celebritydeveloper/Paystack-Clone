@@ -1,3 +1,11 @@
+@use './homepage';
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 $blue: rgb(0, 195, 247);
 $dark-blue: rgb(1, 27, 51);
 $green: rgb(59, 183, 94);
@@ -195,4 +203,173 @@ body {
     left: -1.3rem;
     position: absolute;
     top: -0.49rem;
+}
+
+
+
+// Homepage Styling
+
+.header {
+    background: url('../images/paystack-header.svg') no-repeat;
+    background-position: 500px 50px;
+    background-size: cover;
+    background-color: lighten($color: rgb(59, 183, 94), $amount: 48);
+    //border: 1px solid red;
+    height: 750px;
+    margin-bottom: 200px;
+    position: relative;
+
+
+    &__writeup {
+        //border: 1px solid red;
+        padding-bottom: 150px;
+        padding-top: 180px;
+        margin-left: 30px;
+        width: 550px;
+
+        &--title {
+            color: $dark-blue;
+            font-size: 2.8rem;
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+
+        &--desc {
+            color: $dark-blue;
+            font-size: 1.3rem;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 30px;
+
+        &--title {
+            color: $dark-blue;
+            font-weight: bold;
+        }
+
+        &--logo {
+            display: inline-block;
+            height: 28px;
+            margin-right: 10px;
+            width: 120px;
+
+            & img {
+                max-height: 100%;
+                width: 100%;
+            }
+        }
+
+        &--testimony {
+            align-self: center;
+            border: 1px soild red;
+            color: $dark-blue;
+            display: flex;
+            font-weight: bold;
+            justify-self: flex-end;
+            margin-right: 30px;
+            padding-left: 150px;
+            position: relative;
+            text-align: right;
+        }
+
+        &--play {
+            background: $blue;
+            border-radius: 50%;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            margin-left: 20px;
+            width: 70px;
+        }
+
+    }
+}
+
+.nav {
+    //border: 1px solid green;
+    background: light;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    &--link {
+        color: $dark-blue;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &--dropdown::after {
+        content: '\2304';
+        display: inline-block;
+        margin-left: 3px;
+    }
+}
+
+.nav__one {
+    align-items: center;
+    display: flex;
+}
+
+.nav__one__logo {
+    align-content: center;
+    display: flex;
+    width: 120px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.nav__two {
+    align-items: center;
+    display: flex;
+    //border: 1px solid black;
+    justify-content: flex-end;
+}
+
+@mixin justifyFlex($property) {
+    align-items: $property;
+    display: $property;
+}
+
+.nav__one__list, .nav__two__list {
+    display: flex;
+    justify-self: space-around;
+}
+
+.nav__one__link, .nav__two__link {
+    margin-left: 25px;
+}
+
+.nav__two__link:first-of-type {
+    margin-left: 0;
+}
+
+
+.btn {
+    border-radius: 4px;
+    padding: 10px 18px;
+    text-decoration: none;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+}
+
+.btn-success {
+    background: rgb(59, 183, 94);
+    border: 1px solid rgb(59, 183, 94);
+    color: $white;
 }
