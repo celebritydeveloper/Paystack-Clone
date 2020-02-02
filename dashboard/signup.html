@@ -26,30 +26,30 @@
         
 
         <div class="signup__form">
-            <form action="">
+            <form action="" name="formName">
                 <div class="signup__form__input-group">
                     <label for="" class="signup__form--label">Business Name</label>
-                    <input type="text" class="signup__form--input">
+                    <input type="text" class="signup__form--input" id="bizName">
                 </div>
                 <div class="signup__form__input-group">
                     <label for="" class="signup__form--label">Your work email address</label>
-                    <input type="email" class="signup__form--input">
+                    <input type="email" class="signup__form--input" id="bizEmail">
                 </div>
                 <div class="signup__form__input-group">
                     <label for="" class="signup__form--label">Password</label>
-                    <input type="password" class="signup__form--input">
-                    <div class="signup__password--success">Your password is secure</div>
-                    <ul class="signup__form__password">
-                        <li class="signup__password--auth">One lowercase letter</li>
-                        <li class="signup__password--auth">One uppercase letter</li>
-                        <li class="signup__password--auth">One special character</li>
-                        <li class="signup__password--auth">One number</li>
-                        <li class="signup__password--auth">8 characters minimum</li>
+                    <input type="password" class="signup__form--input" id="password">
+                    <div class="signup__password--success" id="passwordSecure">Your password is secure</div>
+                    <ul class="signup__form__password" id="passwordAuth">
+                        <li class="signup__password--auth" id="lowerCase">One lowercase letter</li>
+                        <li class="signup__password--auth" id="upperCase">One uppercase letter</li>
+                        <li class="signup__password--auth" id="specialChar">One special character</li>
+                        <li class="signup__password--auth" id="number">One number</li>
+                        <li class="signup__password--auth" id="characters">8 characters minimum</li>
                     </ul>
                 </div>
-                <div class="signup__form__input-group">
+                <div class="signup__form__input-group signup__form--password" id="confirmPass">
                     <label for="" class="signup__form--label">Confirm Password</label>
-                    <input type="text" class="signup__form--input" placeholder="Confirm Password">
+                    <input type="password" class="signup__form--input" placeholder="Confirm Password" id="cPassword">
                 </div>
                 <div class="signup__form__input-group">
                     <label for="" class="signup__form--label">Country</label>
@@ -61,7 +61,7 @@
                     <p class="signup__form__select--desc">Don’t see your country? <a href="#">Let us know you’re interested</a></p>
                 </div>
                 <div class="signup__form__button">
-                    <button type="submit" class="signup__form--btn">Create My Account</button>
+                    <button type="submit" class="signup__form--btn signup__btn--disabled" id="signupButton" disabled="true">Create My Account</button>
                     <p class="signup__form--terms">By clicking the “Create My Account” button, you agree to Paystack’s <a href="#">terms of acceptable use.</a></p>
                 </div>
             </form>
@@ -71,6 +71,7 @@
         <p class="signup--login-link">Already have an account? <a href="#">Login</a></p>
     </section>
     
-    <script src="../js/app.js"></script>
+    
+    <script src="../js/signupAuth.js"></script>
 </body>
 </html>
