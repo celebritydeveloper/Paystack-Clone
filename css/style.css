@@ -1,7 +1,16 @@
 @use './homepage';
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: 'Open Sans', sans-serif, 'Roboto', 'Martel Sans';
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .signup {
@@ -182,6 +191,181 @@ body {
 }
 
 .header {
-  height: 450px;
+  background: url("../images/paystack-header.svg") no-repeat;
+  background-position: 500px 50px;
+  background-size: cover;
+  background-color: #edf9f1;
+  border: 1px solid red;
+  height: 700px;
+}
+
+.header__writeup {
+  margin-bottom: 160px;
+  margin-top: 180px;
+  margin-left: 30px;
+  width: 550px;
+}
+
+.header__writeup--title {
+  color: #011b33;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.header__writeup--desc {
+  color: #011b33;
+  font-size: 1.3rem;
+  margin-bottom: 45px;
+}
+
+.header__footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-left: 30px;
+}
+
+.header__footer--title {
+  color: #011b33;
+  font-weight: bold;
+}
+
+.header__footer--logo {
+  display: inline-block;
+  height: 28px;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.header__footer--logo img {
+  border: 1px solid red;
+  max-height: 100%;
+  width: 100%;
+}
+
+.header__footer--testimony {
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 1px soild red;
+  color: #011b33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  justify-self: flex-end;
+  margin-right: 30px;
+  padding-left: 150px;
+  position: relative;
+  text-align: right;
+}
+
+.header__footer--play {
+  background: #00c3f7;
+  border-radius: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  margin-left: 20px;
+  width: 70px;
+}
+
+.nav {
+  background: transparent;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 70px;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav--link {
+  color: #011b33;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav--dropdown::after {
+  content: '\2304';
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.nav__one {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__one__logo {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+}
+
+.nav__one__logo img {
+  width: 100%;
+}
+
+.nav__two {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav__one__list, .nav__two__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: space-around;
+}
+
+.nav__one__link, .nav__two__link {
+  margin-left: 25px;
+}
+
+.nav__two__link:first-of-type {
+  margin-left: 0;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 10px 18px;
+  text-decoration: none;
+}
+
+.btn-lg {
+  padding: 12px 30px;
+}
+
+.btn-success {
+  background: #3bb75e;
+  border: 1px solid #3bb75e;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
