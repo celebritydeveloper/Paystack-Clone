@@ -7,20 +7,22 @@ $black: rgb(0, 0, 0);
 
 
 body {
-    background: lighten($color: $dark-blue, $amount: 1);
     font-family: 'Open Sans', sans-serif, 'Roboto', 'Martel Sans';
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .signup {
+    background: lighten($color: $dark-blue, $amount: 1);
     display: grid;
     justify-items: center;
-    margin: 40px auto 15px auto;
-    width: 60%;
+    width: 100%;
 }
 
 .signup__logo {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .signup__container {
@@ -31,6 +33,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 25px;
     padding: 50px 30px;
+    margin: 20px auto 25px auto;
+    width: 50%;
 }
 
 .signup__writeup {
@@ -67,9 +71,9 @@ body {
     }
 
     &--label {
-        color: lighten($color: rgb(51, 51, 51), $amount: 30);
+        color: $dark-blue;
         display: block;
-        font-weight: 550;
+        font-weight: 590;
         margin-bottom: 7px;
     }
 
@@ -144,6 +148,7 @@ body {
 .signup--login-link {
     color: rgb(219, 219, 219);
     font-size: 0.9rem;
+    margin-bottom: 50px;
 
     & a {
         color: rgb(219, 219, 219);
