@@ -1,5 +1,5 @@
+@use './homepage';
 body {
-  background: #011e38;
   font-family: 'Open Sans', sans-serif, 'Roboto', 'Martel Sans';
   font-size: 16px;
 }
@@ -179,5 +179,9 @@ body {
   left: -1.3rem;
   position: absolute;
   top: -0.49rem;
+}
+
+.header {
+  height: 450px;
 }
 /*# sourceMappingURL=style.css.map */

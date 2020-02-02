@@ -1,3 +1,5 @@
+@use './homepage';
+
 $blue: rgb(0, 195, 247);
 $dark-blue: rgb(1, 27, 51);
 $green: rgb(59, 183, 94);
@@ -7,7 +9,7 @@ $black: rgb(0, 0, 0);
 
 
 body {
-    background: lighten($color: $dark-blue, $amount: 1);
+    //background: lighten($color: $dark-blue, $amount: 1);
     font-family: 'Open Sans', sans-serif, 'Roboto', 'Martel Sans';
     font-size: 16px;
 }
@@ -190,4 +192,12 @@ body {
     left: -1.3rem;
     position: absolute;
     top: -0.49rem;
+}
+
+
+
+// Homepage Styling
+
+.header {
+    height: 450px;
 }
