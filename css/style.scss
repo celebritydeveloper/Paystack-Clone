@@ -211,13 +211,16 @@ body {
     background-position: 500px 50px;
     background-size: cover;
     background-color: lighten($color: rgb(59, 183, 94), $amount: 48);
-    border: 1px solid red;
-    height: 700px;
+    //border: 1px solid red;
+    height: 750px;
+    margin-bottom: 200px;
+    position: relative;
+
 
     &__writeup {
         //border: 1px solid red;
-        margin-bottom: 160px;
-        margin-top: 180px;
+        padding-bottom: 150px;
+        padding-top: 180px;
         margin-left: 30px;
         width: 550px;
 
@@ -252,7 +255,6 @@ body {
             width: 120px;
 
             & img {
-                border: 1px solid red;
                 max-height: 100%;
                 width: 100%;
             }
@@ -288,13 +290,15 @@ body {
 
 .nav {
     //border: 1px solid green;
-    background: transparent;
+    background: light;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 70px;
     padding: 0 30px;
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1;
 
     &--link {
         color: $dark-blue;
