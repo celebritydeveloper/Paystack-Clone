@@ -22,6 +22,13 @@ body {
     padding: 0;
 }
 
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
 .signup {
     display: grid;
     justify-items: center;
@@ -369,4 +376,108 @@ body {
     background: rgb(59, 183, 94);
     border: 1px solid rgb(59, 183, 94);
     color: $white;
+}
+
+.start {
+    margin-bottom: 120px;
+
+    &--title {
+        color: $dark-blue;
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    &--desc {
+        color: $dark-blue;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+.home--title {
+    color: $dark-blue;
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+.home--desc {
+    font-size: 1.20rem;
+    line-height: 1.5;
+    font-weight: 550;
+}
+
+
+.experience {
+    color: $dark-blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 120px;
+
+    
+
+    &__image {
+        
+    }
+
+    &--img {
+        width: 100%;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &--ul {
+            list-style: none;
+
+            & li {
+                // padding: .3em 0 1em 40px;
+                // background-image: url('../images/check.png') no-repeat;
+                
+                width: 10px;
+            }
+
+            & li:before {
+                background: red;
+                padding: 10px;
+                content: '';
+                font-size: 0.5rem;
+                position: relative;
+                top: 0;
+                width: 5px;
+            }
+
+            & li:after {
+                //background: red;
+                content: url('check.svg');
+                font-size: 0.5rem;
+                position: relative;
+                padding: 10px;
+                margin-left: -100px;
+                margin-right: 10px;
+                top: -50px;
+                width: 5px;
+            }
+        }
+
+        
+    }
+
+    &__writeup {
+        //margin-left: 100px;
+        margin-top: -60px;
+    }
+
+    &__sub {
+        margin-top: 80px;
+    }
+}
+
+.margin-left {
+    margin-left: 100px;
+}
+
+.margin-right {
+    margin-right: 100px;
 }
