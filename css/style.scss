@@ -28,6 +28,37 @@ body {
     width: 90%;
 }
 
+.page--link {
+    color: $green;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+.page--link--icon {
+    align-items: center;
+    justify-content: center;
+    border: 1.3px solid $green;
+    border-radius: 50%;
+    color: $green;
+    display: inline-flex;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    height: 20px;
+    margin-right: 6px;
+    //padding: 10px;
+    width: 20px;
+}
+
+.page--link:hover .page--link--icon {
+    background: $green;
+    color: $white;
+    transition: .4s ease-in-out;
+}
+
+
+
 
 .signup {
     display: grid;
@@ -284,7 +315,7 @@ body {
             background: $blue;
             border-radius: 50%;
             color: $white;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
             height: 40px;
@@ -424,6 +455,10 @@ body {
         width: 100%;
     }
 
+    &--video {
+        width: 100%;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -431,34 +466,6 @@ body {
         &--ul {
             list-style: none;
 
-            & li {
-                // padding: .3em 0 1em 40px;
-                // background-image: url('../images/check.png') no-repeat;
-                
-                width: 10px;
-            }
-
-            & li:before {
-                background: red;
-                padding: 10px;
-                content: '';
-                font-size: 0.5rem;
-                position: relative;
-                top: 0;
-                width: 5px;
-            }
-
-            & li:after {
-                //background: red;
-                content: url('check.svg');
-                font-size: 0.5rem;
-                position: relative;
-                padding: 10px;
-                margin-left: -100px;
-                margin-right: 10px;
-                top: -50px;
-                width: 5px;
-            }
         }
 
         
